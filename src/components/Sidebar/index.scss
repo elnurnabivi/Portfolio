@@ -9,18 +9,23 @@
 
   .logo {
     display: block;
-    padding: 8px 0;
+    padding: 16px 0;
 
     img {
       display: block;
       margin: 8px auto;
       width: 24px;
       height: auto;
-
-      &.sub-logo {
-        width: 50px;
-      }
     }
+    // .sub-logo {
+    //   // width: 50px;
+    //   font-size: 16px;
+    //   text-align: center;
+    //   padding-left: 0px;
+    //   color: #f5f3f4;
+    //   text-decoration: none;
+    //   letter-spacing: 2px;
+    // }
   }
 
   nav {
@@ -46,7 +51,8 @@
       }
 
       &:hover {
-        color: #ffd700;
+        // color: #ffd700;
+        color: #e05f3c;
 
         svg {
           opacity: 0;
@@ -91,7 +97,8 @@
 
     a.active {
       svg {
-        color: #ffd700;
+        // color: #ffd700;
+        color: #e05f3c;
       }
     }
   }
@@ -116,7 +123,8 @@
       color: #4d4d4e;
 
       &:hover svg {
-        color: #ffd700;
+        // color: #ffd700;
+        color: #e05f3c;
       }
     }
   }

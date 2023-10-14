@@ -36,10 +36,14 @@
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #115173;
+    // background: #115173;
+    background: #f5f3f4;
+
     height: 50px;
     font-size: 16px;
-    color: #fff;
+    // color: #fff;
+    color: #1e2124;
+
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -47,22 +51,27 @@
   textarea {
     width: 100%;
     border: 0;
-    background: #115173;
+    // background: #115173;
+    background: #f5f3f4;
     height: 50px;
     font-size: 16px;
-    color: #fff;
+    // color: #fff;
+    color: #1e2124;
     padding: 20px;
     box-sizing: border-box;
     min-height: 150px;
   }
 
   .flat-button {
-    color: #ffd700;
+    // color: #ffd700;
+    color: #f5f3f4;
+
     font-size: 11px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
-    border: 1px solid #ffd700;
+    // border: 1px solid #ffd700;
+    border: 1px solid #f5f3f4;
     float: left;
     border-radius: 4px;
     background: 0 0;
@@ -70,6 +79,13 @@
     float: right;
     text-align: center;
     margin-right: 10px;
+
+    &:hover {
+      color: #f5f3f4;
+      border: 1px solid #e05f3c;
+      background: #e05f3c;
+      cursor: pointer;
+    }
   }
 }
 
@@ -110,7 +126,8 @@
     font-size: 16px;
 
     span {
-      color: #ffd700;
+      // color: #ffd700;
+      color: #e05f3c;
     }
   }
 }

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import LogoTitle from '../../assets/images/logo-s.png'
+import E from '../../assets/images/e4.png'
+
 // import Logo from './Logo'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
@@ -48,11 +50,22 @@ const Home = () => {
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
-            <span className={`${letterClass}_12`}>i,</span>
+            <span className={letterClass}>i</span>
+            <span className={letterClass}>,</span>
+            <span className={letterClass}> </span>
+            <span className={letterClass}></span>
             <br />
+            <span className={letterClass}>I</span>
+            <span className={letterClass}>'m</span>
+
+            {/* <span className={`${letterClass}_12`}>i,</span> */}
+            {/* 
             <span className={`${letterClass}_13`}>I</span>
-            <span className={`${letterClass}_14`}>'m</span>
-            <img src={LogoTitle} alt="front-end developer" />
+            <span className={`${letterClass}_14`}>'m</span> */}
+            {/* <img src={LogoTitle} alt="front-end developer" /> */}
+            <img src={E} alt="front-end developer" />
+
+            {/* <span className='e-letter'>E</span> */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
