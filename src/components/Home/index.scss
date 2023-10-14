@@ -1,98 +1,95 @@
 .home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
-    max-height: 90%;
-  }
+    h1 {
+      // color: #fff;
+      // color: #ec795a;
+      color: #f5f3f4;
 
-  h1 {
-    // color: #fff;
-    // color: #ec795a;
-    color: #f5f3f4;
+      font-size: 68px;
+      line-height: 68px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      letter-spacing: 5px;
+      text-align: center;
 
-    font-size: 56px;
-    line-height: 53px;
-    margin: 0;
-    font-family: 'Coolvetica';
-    font-weight: 400;
-    letter-spacing: 4px;
+      img {
+        margin-left: 20px;
+        margin-right: 3px;
+        opacity: 0;
+        width: 36px;
+        height: auto;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+      }
+    }
 
-    &:before {
-      content: '<h1>';
-      font-family: 'La Belle Aurore', cursive;
-      // color: #ffd700;
+    h2 {
+      // color: #8d8d8d;
       color: #ec795a;
-      font-size: 18px;
-      position: absolute;
-      margin-top: -40px;
-      left: -15px;
-      opacity: 0.6;
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 28px;
+      font-family: sans-serif;
+      letter-spacing: 3px;
+      animation: fadeIn 1s 1.8s backwards;
+      text-align: center;
     }
-
-    &:after {
-      content: '<h1/>';
-      font-family: 'La Belle Aurore', cursive;
-      // color: #ffd700;
-      color: #ec795a;
-      font-size: 18px;
-      position: absolute;
-      margin-top: 18px;
-      margin-left: 20px;
-      animation: fadeIn 1s 1.7s backwards;
-      opacity: 0.6;
-    }
-
-    img {
-      margin-left: 20px;
-      opacity: 0;
-      width: 32px;
-      height: auto;
-      animation: rotateIn 1s linear both;
-      animation-delay: 1.4s;
-    }
-  }
-
-  h2 {
-    // color: #8d8d8d;
-    color: #ec795a;
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 11px;
-    font-family: sans-serif;
-    letter-spacing: 3px;
-    animation: fadeIn 1s 1.8s backwards;
   }
 
   .flat-button {
-    // color: #ffd700;
-    color: #f5f3f4;
-    // color: #e05f3c;
+    // // color: #ffd700;
+    // color: #f5f3f4;
+    // // color: #e05f3c;
 
+    // font-size: 16px;
+    // font-weight: 400;
+    // letter-spacing: 4px;
+    // font-family: sans-serif;
+    // text-decoration: none;
+    // padding: 10px 18px;
+    // // border: 1px solid #ffd700;
+    // // border: 2px solid #e05f3c;
+    // border: 2px solid #f5f3f4;
+
+    // border-radius: 10px;
+    // margin-top: 25px;
+    // float: left;
+    // animation: fadeInAnimation 1s 1.8s backwards;
+    // white-space: nowrap;
     font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    font-family: sans-serif;
+    letter-spacing: 2px;
     text-decoration: none;
-    padding: 10px 18px;
-    // border: 1px solid #ffd700;
-    // border: 2px solid #e05f3c;
-    border: 2px solid #f5f3f4;
+    text-transform: uppercase;
+    color: #f5f3f4;
+    background: #e05f3c;
+    cursor: pointer;
+    border: 3px solid #e05f3c;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
+      4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 
-    border-radius: 10px;
-    margin-top: 25px;
-    float: left;
-    animation: fadeInAnimation 1s 1.8s backwards;
-    white-space: nowrap;
-
+    // &:active,
+    // &:hover {
+    //   box-shadow: 0px 0px 0px 0px;
+    //   top: 5px;
+    //   left: 5px;
+    // }
     &:hover {
       // background: #ffd700;
       // color: #333;
-      background: #e05f3c;
-      color: #f5f3f4;
-      border: 2px solid #e05f3c;
+      background: #f5f3f4;
+      color: #e05f3c;
+      border: 4px solid #f5f3f4;
     }
   }
 }
@@ -131,11 +128,5 @@
   }
 
   .logo-container svg {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
   }
 }

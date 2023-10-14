@@ -3,7 +3,7 @@ import gsap from 'gsap-trial'
 import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import LogoS from '../../../assets/images/logo-s.png'
 import './index.scss'
-import DeveloperMain from '../../../assets/images/developer-main.svg'
+import DeveloperMain from '../../../assets/images/developer-image3.png'
 
 const Logo = () => {
   const bgRef = useRef()
@@ -21,7 +21,7 @@ const Logo = () => {
       })
       .from(outlineLogoRef.current, {
         drawSVG: 0,
-        duration: 20,
+        duration: 10,
       })
 
     gsap.fromTo(
@@ -31,8 +31,8 @@ const Logo = () => {
       },
       {
         opacity: 1,
-        delay: 4,
-        duration: 4,
+        delay: 1,
+        duration: 5,
       }
     )
   }, [])

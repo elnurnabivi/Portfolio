@@ -27,7 +27,24 @@ const Home = () => {
     'p',
     'e',
     'r',
-    '.',
+    ',',
+  ]
+  const locationArray = [
+    'b',
+    'a',
+    's',
+    'e',
+    'd',
+    '',
+    'i',
+    'n',
+    '',
+    'P',
+    'o',
+    'l',
+    'a',
+    'n',
+    'd',
   ]
 
   //   useEffect(() => {
@@ -47,14 +64,17 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
+        <Logo />
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
-            <span className={letterClass}>i</span>
+            <span className={letterClass}>e</span>
+            <span className={letterClass}>l</span>
+            <span className={letterClass}>l</span>
+            <span className={letterClass}>o</span>
             <span className={letterClass}>,</span>
             <span className={letterClass}> </span>
             <span className={letterClass}></span>
-            <br />
             <span className={letterClass}>I</span>
             <span className={letterClass}>'m</span>
 
@@ -70,20 +90,28 @@ const Home = () => {
               letterClass={letterClass}
               strArray={nameArray}
               idx={15}
+              className=""
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
               idx={22}
+              className="job-h1"
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={locationArray}
+              idx={22}
+              className="location-h1"
             />
           </h1>
-          <h2>Front-End Developer </h2>
+          <h2>Front-End Developer | ReactJS Specialist </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
-        <Logo />
       </div>
       <Loader type="pacman" />
     </>
