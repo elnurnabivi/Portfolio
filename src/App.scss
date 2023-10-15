@@ -22,6 +22,9 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
 input,
 textarea {
   font-family: 'Helvetica Neue', sans-serif;
@@ -43,4 +46,34 @@ textarea {
   height: 50px;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
+}
+
+.flat-button {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #f5f3f4;
+  background: #e05f3c;
+  cursor: pointer;
+  border: 3px solid #e05f3c;
+  padding: 0.25em 0.75em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  &:hover {
+    background: #f5f3f4;
+    color: #e05f3c;
+    border: 3px solid #f5f3f4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flat-button {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
 }

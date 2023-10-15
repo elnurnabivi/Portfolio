@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
+import Ts from '../../assets/images/ts.png'
 import {
-  faAngular,
   faCss3,
   faGitAlt,
   faHtml5,
@@ -38,6 +38,7 @@ const About = () => {
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
               idx={15}
+              className="aboutme-mobile"
             />
           </h1>
           <p>
@@ -45,7 +46,8 @@ const About = () => {
             established IT company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
           </p>
-          <p align="LEFT">
+          {/* <p align="LEFT"> */}
+          <p>
             I'm quiet confident, naturally curious, and perpetually working on
             improving my chops one design problem at a time.
           </p>
@@ -59,7 +61,7 @@ const About = () => {
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <img src={Ts} />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />

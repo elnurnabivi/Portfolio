@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import E from '../../assets/images/e4.png'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEnvelope,
@@ -29,6 +30,7 @@ const Sidebar = () => {
         <NavLink
           exact="true"
           activeclassname="active"
+          className="home-link"
           to="/"
           onClick={() => setShowNav(false)}
         >
@@ -53,8 +55,8 @@ const Sidebar = () => {
         <FontAwesomeIcon
           onClick={() => setShowNav(false)}
           icon={faClose}
-          color="#ffd700"
-          size="3x"
+          color="#e05f3c"
+          size="4x"
           className="close-icon"
         />
       </nav>
@@ -91,8 +93,8 @@ const Sidebar = () => {
       <FontAwesomeIcon
         onClick={() => setShowNav(true)}
         icon={faBars}
-        color="#ffd700"
-        size="3x"
+        color="#e05f3c"
+        size="4x"
         className="hamburger-icon"
       />
     </div>

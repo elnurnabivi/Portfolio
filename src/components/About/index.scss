@@ -1,66 +1,131 @@
-// .container.about-page {
-//   position: relative; // This is needed for absolute positioning of .stage-cube-cont
-//   display: flex;
-//   flex-direction: row; // This is the default for larger screens
-// }
+.about-page {
+  margin-left: 88px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  // height: 100vh;
 
-.stage-cube-cont {
-  width: 50%;
-  height: 100%;
-  top: 0;
-  padding-top: 18%;
-  margin-left: 0;
-  position: absolute;
-  right: 0;
-  overflow: hidden;
-}
+  .text-zone {
+    max-width: 650px;
+    h1 {
+      font-size: 68px;
+      line-height: 68px;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      letter-spacing: 5px;
+      color: #ec795a;
+      position: relative;
+      margin-bottom: 50px;
 
-.cubespinner {
-  animation-name: spincube;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 12s;
-  transform-style: preserve-3d;
-  transform-origin: 100px 100px 0;
-  margin-left: calc(50% - 100px);
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ec795a;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -15px;
+        left: -20px;
+        opacity: 0.6;
+        line-height: 18px;
+        letter-spacing: 2px;
+      }
 
-  div {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #ccc;
-    background: rgba(255, 255, 255, 0.4);
-    text-align: center;
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 20px 0px lightyellow;
+      &:after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ec795a;
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -40px;
+        bottom: -25px;
+        margin-left: 20px;
+        opacity: 0.6;
+        letter-spacing: 2px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      color: #f5f3f4;
+      font-family: sans-serif;
+      font-weight: 300;
+      max-width: fit-content;
+      animation: pulse 1s;
+      &:nth-of-type(1) {
+        animation-delay: 1.1s;
+      }
+      &:nth-of-type(2) {
+        animation-delay: 1.2s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 1.3s;
+      }
+    }
+
+    .text-animate-hover {
+      &:hover {
+        color: #f5f3f4;
+      }
+    }
   }
 
-  .face1 {
-    transform: translateZ(100px);
-    color: #dd0031;
+  .stage-cube-cont {
+    // margin-left: 300px;
+    // margin-bottom: 150px;
   }
-  .face2 {
-    transform: rotateY(90deg) translateZ(100px);
-    color: #f06529;
-  }
-  .face3 {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-    color: #28a4d9;
-  }
-  .face4 {
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    color: #5ed4f4;
-  }
-  .face5 {
-    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-    color: #efd81d;
-  }
-  .face6 {
-    transform: rotateX(-90deg) translateZ(100px);
-    color: #ec4d28;
+
+  .cubespinner {
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    // margin-left: calc(50% - 100px);
+    margin-bottom: 100px;
+    margin-right: 300px;
+    position: relative;
+
+    div {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      background: rgba(255, 255, 255, 0.4);
+      text-align: center;
+      font-size: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px 0px lightyellow;
+    }
+
+    .face1 {
+      transform: translateZ(100px);
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(100px);
+      color: #f06529;
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+      color: #28a4d9;
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+      color: #5ed4f4;
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+      color: #efd81d;
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(100px);
+      color: #ec4d28;
+    }
   }
 }
 
@@ -86,20 +151,40 @@
   }
 }
 
-@media (max-width: 1200px) {
-  // .container.about-page {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-  .text-zone {
-    width: 80% !important;
+@media screen and (max-width: 768px) {
+  .about-page {
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 20px;
+    // height: 110vh !important;
+    .text-zone {
+      h1 {
+        font-size: 36px;
+        line-height: 36px;
+        letter-spacing: 3px;
+        margin-bottom: 50px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .stage-cube-cont {
+      margin-bottom: 100px;
+      .cubespinner {
+        margin-right: 220px;
+      }
+    }
   }
-  .stage-cube-cont {
-    // position: absolute;
-    width: 90%;
-    top: -90px;
-    right: 25px;
-    size: 20px;
-    opacity: 0.4;
-  }
+
+  //   .text-zone {
+  //     width: 80% !important;
+  //   }
+  //   .stage-cube-cont {
+  //     // position: absolute;
+  //     width: 90%;
+  //     top: -90px;
+  //     right: 25px;
+  //     size: 20px;
+  //     opacity: 0.4;
+  //   }
 }

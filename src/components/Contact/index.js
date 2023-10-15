@@ -46,7 +46,20 @@ const Contact = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+              strArray={[
+                'G',
+                'e',
+                't',
+                '',
+                'i',
+                'n',
+                '',
+                't ',
+                'o',
+                'u',
+                'c',
+                'h',
+              ]}
               idx={15}
             />
           </h1>
@@ -85,7 +98,7 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input type="submit" className="flat-button" value="Send" />
                 </li>
               </ul>
             </form>
@@ -94,12 +107,10 @@ const Contact = () => {
         <div className="info-map">
           Elnur Nabivi,
           <br />
-          Poland,
-          <br />
           Pluzanska 1, 02-470 <br />
-          Warsaw <br />
+          Warsaw, Poland <br />
           <br />
-          <span>nabivielnur@gmail.com</span>
+          <span>elnurnabivi@gmail.com</span>
         </div>
         <div className="map-wrap">
           <MapContainer
@@ -108,7 +119,7 @@ const Contact = () => {
           >
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[52.207275980857666, 20.92813968417584]}>
-              <Popup>Elnur lives here, come over for a cup of coffee </Popup>
+              <Popup>I live here, come over for a cup of coffee </Popup>
             </Marker>
           </MapContainer>
         </div>
