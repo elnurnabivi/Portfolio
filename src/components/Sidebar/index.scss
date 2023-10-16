@@ -151,15 +151,15 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 100px 0 0 50px;
-        gap: 20px;
+        padding: 100px 0 0 40px;
+        // gap: 10px;
       }
 
       a {
         display: flex;
         align-items: center;
         color: #f5f3f4;
-        font-size: 40px;
+        font-size: 28px;
       }
       a.home-link {
         &::after {
@@ -184,7 +184,7 @@
         position: initial;
         width: auto;
         margin-left: 10px;
-        font-size: 22px;
+        font-size: 18px;
       }
 
       a svg {

@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 90vh;
+  height: 100vh;
 
   // margin-left: 88px;
   .text-zone {
@@ -21,6 +21,15 @@
       letter-spacing: 5px;
       text-align: center;
 
+      .job-h1,
+      .location-h1 {
+        font-size: 54px;
+        display: block;
+      }
+      .job-h1 {
+        margin-bottom: -10px;
+      }
+
       img {
         margin-left: 20px;
         margin-right: 3px;
@@ -35,7 +44,9 @@
     h2 {
       // color: #8d8d8d;
       color: #ec795a;
+      // color: #e05f3c;
       margin-top: 20px;
+      margin-bottom: 40px;
       font-weight: 400;
       font-size: 28px;
       font-family: sans-serif;
@@ -57,16 +68,24 @@
   .home-page {
     .text-zone {
       h1 {
-        font-size: 36px;
-        line-height: 36px;
+        font-size: 40px;
+        line-height: 40px;
         letter-spacing: 3px;
         margin: 10px 0;
+        .job-h1,
+        .location-h1 {
+          font-size: 32px;
+          display: block;
+        }
+        .job-h1 {
+          margin-bottom: 0;
+        }
         img {
           width: 22px;
         }
       }
       h2 {
-        font-size: 20px;
+        font-size: 18px;
         letter-spacing: 2px;
       }
     }

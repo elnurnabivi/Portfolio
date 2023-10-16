@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import E from '../../assets/images/e4.png'
+// import E from '../../assets/images/e4.png'
+import E from '../../assets/images/e6.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {

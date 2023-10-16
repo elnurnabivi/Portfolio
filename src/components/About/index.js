@@ -42,19 +42,18 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
-          </p>
-          {/* <p align="LEFT"> */}
-          <p>
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            Hey there! I'm an enthusiastic Junior Front-End Developer on the
+            hunt for a position in a vibrant IT company. I'm eager to dive into
+            the latest technologies and immerse myself in exciting projects.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            Confident and always curious, I'm constantly improving my skills,
+            tackling one design challenge at a time.
+          </p>
+          <p>
+            My toolbox includes React, JavaScript, TypeScript, HTML, CSS3/SCSS,
+            Bootstrap, Tailwind, jQuery, and Git. Let's create something awesome
+            together!
           </p>
         </div>
 
