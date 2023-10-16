@@ -1,0 +1,49 @@
+.projects-page {
+  margin-left: 92px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+
+  .text-zone {
+    // max-width: 650px;
+    h1 {
+      font-size: 68px;
+      line-height: 68px;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      letter-spacing: 5px;
+      color: #ec795a;
+      position: relative;
+      margin-bottom: 50px;
+
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ec795a;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -15px;
+        left: -20px;
+        opacity: 0.6;
+        line-height: 18px;
+        letter-spacing: 2px;
+      }
+
+      &:after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ec795a;
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -40px;
+        bottom: -25px;
+        margin-left: 20px;
+        opacity: 0.6;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}

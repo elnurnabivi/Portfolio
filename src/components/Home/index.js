@@ -117,7 +117,7 @@ const Home = () => {
             <Link to="/contact" className="flat-button">
               Contact me
             </Link>
-            <Link to="/about" className="flat-button">
+            <Link to="/projects" className="flat-button">
               Projects
             </Link>
           </div>
