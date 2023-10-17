@@ -1,13 +1,19 @@
 .projects-page {
   margin-left: 92px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100%;
 
   .text-zone {
     // max-width: 650px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 130px;
     h1 {
       font-size: 68px;
       line-height: 68px;
@@ -43,6 +49,85 @@
         margin-left: 20px;
         opacity: 0.6;
         letter-spacing: 2px;
+      }
+    }
+    p {
+      font-size: 20px;
+      color: #f5f3f4;
+      font-family: sans-serif;
+      font-weight: 300;
+      max-width: fit-content;
+      animation: pulse 1s;
+    }
+
+    .text-animate-hover {
+      &:hover {
+        color: #f5f3f4;
+      }
+    }
+  }
+  .projects-list {
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5rem;
+    width: 85%;
+
+    &_item {
+      border-radius: 20px;
+      box-shadow: 0 8px 35px 0 hsla(36, 25%, 65%, 0.15);
+      padding: 3rem 5rem;
+      transition: all 0.3s ease;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      aspect-ratio: 3 / 2;
+      position: relative;
+      // min-width: 300px; ADD THIS ONE FOR MOBILE ^^
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 20px;
+        transition: background-color 0.3s ease-in-out;
+        pointer-events: none;
+        z-index: 1;
+      }
+      &:hover::before {
+        background: rgba(0, 0, 0, 0.8);
+      }
+
+      &_tech {
+        display: flex;
+        flex-wrap: wrap;
+        &_elements {
+          background: rgb(105, 104, 105);
+          padding: 4px 10px;
+          border-radius: 50px;
+          font-size: 16px;
+          margin-right: 6px;
+          color: rgb(255, 255, 255);
+          font-weight: 500;
+        }
+      }
+      &_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+      }
+      &_name,
+      &_info,
+      &_tech,
+      &_links {
+        position: relative;
+        z-index: 2;
       }
     }
   }
