@@ -30,10 +30,10 @@ const Projects = () => {
             />
           </h1>
           <p>
-            Here are a few recent projects I've worked on. Want to see more?
+            Here are a few recent projects I've developed. Want to see more?
             <a
               href="https://github.com/elnurnabivi"
-              className="flat-button"
+              className="flat-button projects-btn1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -60,7 +60,7 @@ const Projects = () => {
             <div className="projects-list_item_links">
               <a
                 href="https://elnurnabivi.github.io/ReelPeak/"
-                className="flat-button"
+                className="flat-button "
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -120,83 +120,73 @@ const Projects = () => {
             className="projects-list_item"
             style={{ backgroundImage: `url(${Bhromoan})` }}
           >
-            <div className="projects-list_item">
-              <div className="projects-list_item_name">Bhromaon</div>
-              <div className="projects-list_item_info">
-                A safe travel company
-              </div>
-              <div className="projects-list_item_tech">
-                <span className="projects-list_item_tech_elements">
-                  JavaScript
-                </span>
-                <span className="projects-list_item_tech_elements">
-                  CSS/SCSS
-                </span>
-                <span className="projects-list_item_tech_elements">HTML</span>
-              </div>
-              <div className="projects-list_item_links">
-                <a
-                  href=""
-                  className="flat-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Visit Website
-                </a>
-                <a
-                  href="https://github.com/elnurnabivi/BHROMAON"
-                  className="flat-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View on GitHub
-                </a>
-              </div>
+            <div className="projects-list_item_name">Bhromaon</div>
+            <div className="projects-list_item_info">A safe travel company</div>
+            <div className="projects-list_item_tech">
+              <span className="projects-list_item_tech_elements">
+                JavaScript
+              </span>
+              <span className="projects-list_item_tech_elements">CSS/SCSS</span>
+              <span className="projects-list_item_tech_elements">HTML</span>
+            </div>
+            <div className="projects-list_item_links">
+              <a
+                href=""
+                className="flat-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              <a
+                href="https://github.com/elnurnabivi/BHROMAON"
+                className="flat-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
             </div>
           </div>
           <div
             className="projects-list_item"
             style={{ backgroundImage: `url(${ActiveTrip})` }}
           >
-            <div className="projects-list_item">
-              <div className="projects-list_item_name">Active Trip</div>
-              <div className="projects-list_item_info">A travel company</div>
-              <div className="projects-list_item_tech">
-                <span className="projects-list_item_tech_elements">
-                  JavaScript
-                </span>
-                <span className="projects-list_item_tech_elements">
-                  CSS/SCSS
-                </span>
-                <span className="projects-list_item_tech_elements">HTML</span>
-                <span className="projects-list_item_tech_elements">
-                  Bootstrap
-                </span>
-              </div>
-              <div className="projects-list_item_links">
-                <a
-                  href=""
-                  className="flat-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Visit Website
-                </a>
-                <a
-                  href="https://github.com/elnurnabivi/active-trip-website"
-                  className="flat-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View on GitHub
-                </a>
-              </div>
+            <div className="projects-list_item_name">Active Trip</div>
+            <div className="projects-list_item_info">A travel company</div>
+            <div className="projects-list_item_tech">
+              <span className="projects-list_item_tech_elements">
+                JavaScript
+              </span>
+              <span className="projects-list_item_tech_elements">CSS/SCSS</span>
+              <span className="projects-list_item_tech_elements">HTML</span>
+              <span className="projects-list_item_tech_elements">
+                Bootstrap
+              </span>
+            </div>
+            <div className="projects-list_item_links">
+              <a
+                href=""
+                className="flat-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              <a
+                href="https://github.com/elnurnabivi/active-trip-website"
+                className="flat-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
             </div>
           </div>
         </div>
         <a
           href="https://github.com/elnurnabivi"
-          className="flat-button"
+          className="flat-button projects-btn2"
           target="_blank"
           rel="noopener noreferrer"
         >
