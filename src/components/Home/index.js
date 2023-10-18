@@ -14,7 +14,21 @@ import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['l', 'n', 'u', 'r']
+  const nameArray = [
+    'H',
+    'i',
+    ',',
+    '',
+    'I',
+    "'m",
+    '',
+    '',
+    'E',
+    'l',
+    'n',
+    'u',
+    'r',
+  ]
   const jobArray = [
     'w',
     'e',
@@ -68,7 +82,7 @@ const Home = () => {
         <Logo />
         <div className="text-zone">
           <h1>
-            <span className={letterClass}>H</span>
+            {/* <span className={letterClass}>H</span>
             <span className={letterClass}>e</span>
             <span className={letterClass}>l</span>
             <span className={letterClass}>l</span>
@@ -78,20 +92,20 @@ const Home = () => {
             <span className={letterClass}></span>
             <span className={letterClass}>I</span>
             <span className={letterClass}>'m</span>
+            <span className={letterClass}></span> */}
 
             {/* <span className={`${letterClass}_12`}>i,</span> */}
             {/* 
             <span className={`${letterClass}_13`}>I</span>
             <span className={`${letterClass}_14`}>'m</span> */}
             {/* <img src={LogoTitle} alt="front-end developer" /> */}
-            <img src={E} alt="front-end developer" />
+            {/* <img src={E} alt="front-end developer" /> */}
 
             {/* <span className='e-letter'>E</span> */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
-              idx={15}
-              className=""
+              idx={10}
             />
             <br />
             <span className="job-h1">
@@ -107,7 +121,7 @@ const Home = () => {
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={locationArray}
-                idx={22}
+                idx={24}
               />
             </span>
           </h1>

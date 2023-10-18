@@ -107,10 +107,9 @@ const Contact = () => {
         <div className="info-map">
           Elnur Nabivi,
           <br />
-          Pluzanska 1, 02-470 <br />
-          Warsaw, Poland <br />
+          Warsaw, Poland
           <br />
-          <span>elnurnabivi@gmail.com</span>
+          elnurnabivi@gmail.com
         </div>
         <div className="map-wrap">
           <MapContainer

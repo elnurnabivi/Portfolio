@@ -2,7 +2,7 @@
   margin-left: 92px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   min-height: 100%;
 
@@ -15,14 +15,15 @@
     align-items: flex-start;
     margin-left: 130px;
     h1 {
-      font-size: 68px;
-      line-height: 68px;
+      font-size: 60px;
+      line-height: 60px;
       font-family: 'Coolvetica';
       font-weight: 400;
       letter-spacing: 5px;
       color: #ec795a;
       position: relative;
-      margin-bottom: 50px;
+      // margin-bottom: 50px;
+      margin: 160px 0 32px;
 
       &:before {
         content: '<h1>';
@@ -52,7 +53,7 @@
       }
     }
     p {
-      font-size: 20px;
+      font-size: 16px;
       color: #f5f3f4;
       font-family: sans-serif;
       font-weight: 400;
@@ -60,7 +61,10 @@
       animation: pulse 1s;
       .projects-btn1 {
         margin: 0 20px;
-        width: 50%;
+        // width: 50%;
+        // padding: 0.15em 0.5em;
+        letter-spacing: 0px;
+        // font-size: 16px;
       }
     }
 
@@ -71,17 +75,16 @@
     }
   }
   .projects-list {
-    grid-gap: 3rem;
     display: grid;
-    gap: 3rem;
+    gap: 48px;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 5rem;
-    width: 85%;
+    margin-top: 60px;
+    width: 82%;
 
     &_item {
-      border-radius: 20px;
+      border-radius: 10px;
       box-shadow: 0 8px 35px 0 hsla(36, 25%, 65%, 0.15);
-      padding: 3rem 5rem;
+      padding: 48px 80px;
       transition: all 0.3s ease;
       background-size: contain;
       background-position: center;
@@ -94,7 +97,12 @@
       justify-content: flex-end;
       // align-items: flex-start;
       padding: 20px;
-      gap: 10px;
+      gap: 15px;
+
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: translateY(-10px);
+      }
 
       &_name {
         font-size: 32px;
@@ -103,8 +111,8 @@
         color: #ec795a;
       }
       &_info {
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 16px;
         font-weight: 400;
         color: #f5f3f4;
       }
@@ -116,13 +124,13 @@
         bottom: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0);
-        border-radius: 20px;
+        border-radius: 10px;
         transition: background-color 0.3s ease-in-out;
         pointer-events: none;
         z-index: 1;
       }
       &:hover::before {
-        background: rgba(0, 0, 0, 0.85);
+        background: rgba(0, 0, 0, 0.8);
       }
 
       &_tech {
@@ -144,7 +152,12 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 40px;
+        gap: 25px;
+        .flat-button {
+          font-size: 16px;
+          letter-spacing: 0;
+          padding: 0.15em 0.5em;
+        }
       }
       &_name,
       &_info,
@@ -166,5 +179,6 @@
   }
   .projects-btn2 {
     margin: 50px 0;
+    letter-spacing: 0;
   }
 }

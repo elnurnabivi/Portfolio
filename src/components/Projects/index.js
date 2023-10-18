@@ -82,7 +82,7 @@ const Projects = () => {
           >
             <div className="projects-list_item_name">Monticello</div>
             <div className="projects-list_item_info">
-              An architecture company
+              Landing page of an architecture company
             </div>
             <div className="projects-list_item_tech">
               <span className="projects-list_item_tech_elements">
@@ -97,14 +97,6 @@ const Projects = () => {
               <span className="projects-list_item_tech_elements">API</span>
             </div>
             <div className="projects-list_item_links">
-              <a
-                href=""
-                className="flat-button"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Visit Website
-              </a>
               <a
                 href="https://github.com/elnurnabivi/Monticello"
                 className="flat-button"
@@ -130,14 +122,6 @@ const Projects = () => {
               <span className="projects-list_item_tech_elements">HTML</span>
             </div>
             <div className="projects-list_item_links">
-              <a
-                href=""
-                className="flat-button"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Visit Website
-              </a>
               <a
                 href="https://github.com/elnurnabivi/BHROMAON"
                 className="flat-button"
@@ -165,14 +149,6 @@ const Projects = () => {
               </span>
             </div>
             <div className="projects-list_item_links">
-              <a
-                href=""
-                className="flat-button"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Visit Website
-              </a>
               <a
                 href="https://github.com/elnurnabivi/active-trip-website"
                 className="flat-button"
