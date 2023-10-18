@@ -107,7 +107,6 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          {/* </div> */}
           <div
             className="projects-list_item"
             style={{ backgroundImage: `url(${Bhromoan})` }}

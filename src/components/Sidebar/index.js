@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-// import E from '../../assets/images/e4.png'
 import E from '../../assets/images/e6.png'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEnvelope,
@@ -26,7 +24,6 @@ const Sidebar = () => {
     <div className="nav-bar">
       <Link className="logo" to="/" onClick={() => setShowNav(false)}>
         <img src={E} alt="Logo" />
-        {/* <p className="sub-logo">Elnur</p> */}
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink
@@ -70,35 +67,37 @@ const Sidebar = () => {
           className="close-icon"
         />
       </nav>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/elnurnabivi"
-          >
-            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/elnurnabivi/"
-          >
-            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://twitter.com/elnurnabivi"
-          >
-            <FontAwesomeIcon icon={faXTwitter} color="#4d4d4e" />
-          </a>
-        </li>
-      </ul>
+      <div>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/elnurnabivi"
+            >
+              <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/elnurnabivi/"
+            >
+              <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/elnurnabivi"
+            >
+              <FontAwesomeIcon icon={faXTwitter} color="#4d4d4e" />
+            </a>
+          </li>
+        </ul>
+      </div>
       <FontAwesomeIcon
         onClick={() => setShowNav(true)}
         icon={faBars}

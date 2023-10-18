@@ -4,23 +4,20 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 100vh;
-
-  // margin-left: 88px;
+  min-height: 100vh;
   .text-zone {
     h1 {
-      // color: #fff;
-      // color: #ec795a;
       color: #f5f3f4;
-
-      font-size: 60px;
-      line-height: 60px;
+      font-size: 80px;
+      line-height: 70px;
       margin: 0;
       font-family: 'Coolvetica';
       font-weight: 400;
       letter-spacing: 5px;
       text-align: center;
-
+      .name-h1 {
+        line-height: 100px;
+      }
       .job-h1,
       .location-h1 {
         font-size: 54px;
@@ -29,22 +26,10 @@
       .job-h1 {
         margin-bottom: -10px;
       }
-
-      //   img {
-      //     margin-left: 20px;
-      //     margin-right: 3px;
-      //     opacity: 0;
-      //     width: 36px;
-      //     height: auto;
-      //     animation: rotateIn 1s linear both;
-      //     animation-delay: 1.4s;
-      //   }
     }
 
     h2 {
-      // color: #8d8d8d;
       color: #ec795a;
-      // color: #e05f3c;
       margin-top: 20px;
       margin-bottom: 40px;
       font-weight: 400;
@@ -59,19 +44,22 @@
       flex-direction: row;
       justify-content: center;
       gap: 40px;
-      // align-items: end;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .home-page {
+    min-height: 90vh;
     .text-zone {
       h1 {
         font-size: 40px;
         line-height: 40px;
         letter-spacing: 3px;
         margin: 10px 0;
+        .name-h1 {
+          line-height: 50px;
+        }
         .job-h1,
         .location-h1 {
           font-size: 32px;
@@ -87,38 +75,8 @@
       h2 {
         font-size: 18px;
         letter-spacing: 2px;
+        margin-bottom: 28px;
       }
     }
   }
-  // .tags,
-  // .home-page h1:before,
-  // .home-page h1:after {
-  //   display: none;
-  // }
-
-  // .home-page .text-zone {
-  //   position: initial;
-  //   width: 100%;
-  //   transform: none;
-  //   padding: 10px;
-  //   box-sizing: border-box;
-  // }
-
-  // .home-page .flat-button {
-  //   float: none;
-  //   display: block;
-  //   margin: 20px auto 0 auto;
-  //   width: 124px;
-  // }
-
-  // .logo-container {
-  //   position: relative;
-  //   width: 100px;
-  //   height: auto;
-  //   top: 50px;
-  //   right: 0;
-  //   box-sizing: border-box;
-  //   margin: auto;
-  //   left: 0;
-  // }
 }

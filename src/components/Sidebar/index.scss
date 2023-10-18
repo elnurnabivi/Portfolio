@@ -1,7 +1,5 @@
 .nav-bar {
-  background: #181818;
-  // background: #161513;
-
+  background: #161513;
   width: 92px;
   height: 100vh;
   position: fixed;
@@ -19,7 +17,6 @@
       width: 34px;
       height: auto;
       animation: rotateIn 1s linear both;
-      // animation-delay: 0.4s;
     }
   }
 
@@ -147,7 +144,7 @@
       width: 100%;
       top: 0;
       left: 0;
-      background: #181818;
+      background: #161513;
       height: 100%;
       margin: 0;
       z-index: 2;
@@ -159,7 +156,6 @@
         justify-content: flex-start;
         align-items: flex-start;
         padding: 100px 0 0 40px;
-        // gap: 10px;
       }
 
       a {

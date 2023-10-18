@@ -1,26 +1,20 @@
 html {
-  /* font-size: 100%; */
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', sans-serif;
-  /* color: #444; */
   color: #ec795a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: #022c43; */
   /* background: #2c3135; */
-  background: #1c1c22;
-  /* background: #161513; */
+  /* background: #1c1c22; */
+  background: #161513;
   overflow: auto;
   display: block;
 }
-
-/* .dashboard {
-  margin-top: 200px;
-  margin-left: 200px;
-} */
 
 @media screen and (max-width: 768px) {
   body {

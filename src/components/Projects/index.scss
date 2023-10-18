@@ -7,7 +7,6 @@
   min-height: 100%;
 
   .text-zone {
-    // max-width: 650px;
     align-self: flex-start;
     display: flex;
     flex-direction: column;
@@ -22,7 +21,6 @@
       letter-spacing: 5px;
       color: #ec795a;
       position: relative;
-      // margin-bottom: 50px;
       margin: 160px 0 32px;
 
       &:before {
@@ -60,11 +58,9 @@
       max-width: fit-content;
       animation: pulse 1s;
       .projects-btn1 {
+        display: inline-block;
         margin: 0 20px;
-        // width: 50%;
-        // padding: 0.15em 0.5em;
         letter-spacing: 0px;
-        // font-size: 16px;
       }
     }
 
@@ -91,11 +87,9 @@
       background-repeat: no-repeat;
       aspect-ratio: 3 / 2;
       position: relative;
-      // min-width: 300px; ADD THIS ONE FOR MOBILE ^^
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      // align-items: flex-start;
       padding: 20px;
       gap: 15px;
 
@@ -139,13 +133,10 @@
         gap: 6px;
         &_elements {
           background: rgb(105, 104, 105);
-          padding: 4px 10px;
-          border-radius: 50px;
-          font-size: 16px;
-          // margin-right: 6px;
+          padding: 4px 8px;
+          border-radius: 8px;
+          font-size: 14px;
           color: #f5f3f4;
-
-          // font-weight: 500;
         }
       }
       &_links {
@@ -172,7 +163,7 @@
         .projects-list_item_info,
         .projects-list_item_tech,
         .projects-list_item_links {
-          opacity: 1; // Show the text classes on hover
+          opacity: 1;
         }
       }
     }
@@ -180,5 +171,89 @@
   .projects-btn2 {
     margin: 50px 0;
     letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-page {
+    margin-left: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    .text-zone {
+      margin-left: 0;
+      h1 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 3px;
+        margin: 64px 0 32px;
+      }
+      p {
+        .projects-btn1 {
+          display: table;
+          margin: 20px 0;
+          font-size: 16px;
+          letter-spacing: 0px;
+        }
+      }
+    }
+    .projects-list {
+      display: grid;
+      gap: 25px;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 10px;
+      width: 100%;
+      &_item {
+        background-size: cover;
+        gap: 10px;
+        padding: 10px;
+
+        &:hover {
+          transform: none;
+          background-size: cover;
+        }
+        &_name {
+          font-size: 24px;
+          line-height: 14px;
+          font-weight: 400;
+        }
+        &_info {
+          font-size: 14px;
+          line-height: 14px;
+          font-weight: 400;
+        }
+        &_tech {
+          gap: 3px;
+          &_elements {
+            padding: 2px 3px;
+            border-radius: 4px;
+            font-size: 12px;
+          }
+        }
+        &_links {
+          gap: 15px;
+          .flat-button {
+            font-size: 14px;
+            letter-spacing: 0;
+            padding: 0.1em 0.25em;
+            // border: 0px;
+          }
+        }
+        &_name,
+        &_info,
+        &_tech,
+        &_links {
+          opacity: 1;
+          position: relative;
+          // z-index: 2;
+        }
+        &::before {
+          content: '';
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        &:hover::before {
+          background: rgba(0, 0, 0, 0.9);
+        }
+      }
+    }
   }
 }

@@ -142,9 +142,9 @@
 
   .map-wrap {
     background: rgba(8, 253, 216, 0.1);
-    float: right;
-    height: 115%;
-    margin-top: -3%;
+    // float: right;
+    height: 100%;
+    // margin-top: -3%;
     width: 45%;
   }
 
@@ -211,10 +211,9 @@
   }
 
   .map-wrap {
-    float: none;
+    // float: none;
     margin: 0;
     width: 100% !important;
-
     margin-bottom: 20px;
   }
 
