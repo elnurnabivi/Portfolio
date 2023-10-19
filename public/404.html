@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting</title>
+    <script type="text/javascript">
+      var path = window.location.href.replace(/\/$/, '').split('/')
+      path = path[path.length - 1]
+      window.location.replace('/#' + path)
+    </script>
+  </head>
+  <body></body>
+</html>
