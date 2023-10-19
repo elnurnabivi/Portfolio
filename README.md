@@ -1,6 +1,6 @@
 # Welcome to My Portfolio
 
-Hello there! 👋 I'm Elnur, a passionate developer dedicated to creating engaging and user-friendly web experiences. This portfolio is a showcase of my journey and accomplishments in the realm of web development.
+Hello there! 👋 I'm Elnur, a passionate developer dedicated to creating engaging and user-friendly web experiences. This portfolio is a showcase of my journey and accomplishments in the realm of web development. You can see the project live https://nabivi.com/
 
 ## 🚀 Projects
 
