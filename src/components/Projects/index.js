@@ -6,6 +6,7 @@ import ReelPeak from '../../assets/images/p-reelpeak2.png'
 import Monticello from '../../assets/images/p-monticello2.png'
 import Bhromoan from '../../assets/images/p-bhromaon.png'
 import ActiveTrip from '../../assets/images/p-activetrip.png'
+import StartupZ from '../../assets/images/p-startupz.png'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -76,6 +77,44 @@ const Projects = () => {
               </a>
             </div>
           </div>
+
+          <div
+            className="projects-list_item"
+            style={{ backgroundImage: `url(${StartupZ})` }}
+          >
+            <div className="projects-list_item_name">StartupZ</div>
+            <div className="projects-list_item_info">
+              Platform dedicated to helping startups thrive
+            </div>
+            <div className="projects-list_item_tech">
+              <span className="projects-list_item_tech_elements">
+                JavaScript
+              </span>
+              <span className="projects-list_item_tech_elements">React </span>
+              <span className="projects-list_item_tech_elements">CSS/SCSS</span>
+              <span className="projects-list_item_tech_elements">HTML</span>
+              <span className="projects-list_item_tech_elements">Formik</span>
+            </div>
+            <div className="projects-list_item_links">
+              <a
+                href="https://elnurnabivi.github.io/StartupZ/"
+                className="flat-button "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              <a
+                href="https://github.com/elnurnabivi/StartupZ"
+                className="flat-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
           <div
             className="projects-list_item"
             style={{ backgroundImage: `url(${Monticello})` }}
