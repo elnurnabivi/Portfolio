@@ -7,6 +7,7 @@ import Monticello from '../../assets/images/p-monticello2.png'
 import Bhromoan from '../../assets/images/p-bhromaon.png'
 import ActiveTrip from '../../assets/images/p-activetrip.png'
 import StartupZ from '../../assets/images/p-startupz.png'
+import PizzaApp from '../../assets/images/p-pizza-app.png'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -137,6 +138,14 @@ const Projects = () => {
             </div>
             <div className="projects-list_item_links">
               <a
+                href="https://elnurnabivi.github.io/Monticello/"
+                className="flat-button "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              <a
                 href="https://github.com/elnurnabivi/Monticello"
                 className="flat-button"
                 target="_blank"
@@ -146,6 +155,43 @@ const Projects = () => {
               </a>
             </div>
           </div>
+
+          <div
+            className="projects-list_item"
+            style={{ backgroundImage: `url(${PizzaApp})` }}
+          >
+            <div className="projects-list_item_name">Pizza restaurant</div>
+            <div className="projects-list_item_info">
+              Pizza ordering website
+            </div>
+            <div className="projects-list_item_tech">
+              <span className="projects-list_item_tech_elements">
+                JavaScript
+              </span>
+              <span className="projects-list_item_tech_elements">React </span>
+              <span className="projects-list_item_tech_elements">CSS</span>
+              <span className="projects-list_item_tech_elements">HTML</span>
+            </div>
+            <div className="projects-list_item_links">
+              <a
+                href="https://elnurnabivi.github.io/Pizza-restaurant/"
+                className="flat-button "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              <a
+                href="https://github.com/elnurnabivi/Pizza-restaurant"
+                className="flat-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
           <div
             className="projects-list_item"
             style={{ backgroundImage: `url(${Bhromoan})` }}
@@ -161,7 +207,15 @@ const Projects = () => {
             </div>
             <div className="projects-list_item_links">
               <a
-                href="https://github.com/elnurnabivi/BHROMAON"
+                href="https://elnurnabivi.github.io/Bhromaon/"
+                className="flat-button "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              <a
+                href="https://github.com/elnurnabivi/Bhromaon"
                 className="flat-button"
                 target="_blank"
                 rel="noopener noreferrer"
