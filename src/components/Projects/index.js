@@ -8,6 +8,8 @@ import Bhromoan from '../../assets/images/p-bhromaon.png'
 import ActiveTrip from '../../assets/images/p-activetrip.png'
 import StartupZ from '../../assets/images/p-startupz.png'
 import PizzaApp from '../../assets/images/p-pizza-app.png'
+import SaaS from '../../assets/images/p-saas.png'
+import Bankapp from '../../assets/images/p-hooba.png'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -70,6 +72,81 @@ const Projects = () => {
               </a>
               <a
                 href="https://github.com/elnurnabivi/ReelPeak"
+                className="flat-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div
+            className="projects-list_item"
+            style={{ backgroundImage: `url(${SaaS})` }}
+          >
+            <div className="projects-list_item_name">SaaS</div>
+            <div className="projects-list_item_info">
+              A UI/UX Design Subscription app
+            </div>
+            <div className="projects-list_item_tech">
+              <span className="projects-list_item_tech_elements">React</span>
+              <span className="projects-list_item_tech_elements">
+                JavaScript
+              </span>
+              <span className="projects-list_item_tech_elements">HTML</span>
+              <span className="projects-list_item_tech_elements">CSS</span>
+              <span className="projects-list_item_tech_elements">Tailwind</span>
+            </div>
+            <div className="projects-list_item_links">
+              <a
+                href="https://elnurnabivi.github.io/Design-SaaS/"
+                className="flat-button "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              <a
+                href="https://github.com/elnurnabivi/Design-SaaS"
+                className="flat-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div
+            className="projects-list_item"
+            style={{ backgroundImage: `url(${Bankapp})` }}
+          >
+            <div className="projects-list_item_name">SaaS</div>
+            <div className="projects-list_item_info">
+              A mobile-friendly web app designed to provide a seamless banking
+              experience.
+            </div>
+            <div className="projects-list_item_tech">
+              <span className="projects-list_item_tech_elements">React</span>
+              <span className="projects-list_item_tech_elements">
+                JavaScript
+              </span>
+              <span className="projects-list_item_tech_elements">HTML</span>
+              <span className="projects-list_item_tech_elements">CSS</span>
+              <span className="projects-list_item_tech_elements">Tailwind</span>
+            </div>
+            <div className="projects-list_item_links">
+              <a
+                href="https://elnurnabivi.github.io/Bank-app/"
+                className="flat-button "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              <a
+                href="https://github.com/elnurnabivi/Bank-app"
                 className="flat-button"
                 target="_blank"
                 rel="noopener noreferrer"
