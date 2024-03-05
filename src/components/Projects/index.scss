@@ -124,7 +124,13 @@
         z-index: 1;
       }
       &:hover::before {
-        background: rgba(0, 0, 0, 0.8);
+        // background: rgba(0, 0, 0, 0.8);
+        background: linear-gradient(
+          -144.39deg,
+          rgba(255, 255, 255, 0.5) -278.56%,
+          rgba(109, 109, 109, 0.5) -78.47%,
+          rgba(17, 16, 29, 0.9) 91.61%
+        );
       }
 
       &_tech {
@@ -248,10 +254,22 @@
         }
         &::before {
           content: '';
-          background-color: rgba(0, 0, 0, 0.8);
+          // background-color: rgba(0, 0, 0, 0.8);
+          background: linear-gradient(
+            -144.39deg,
+            rgba(255, 255, 255, 0.3) -278.56%,
+            rgba(109, 109, 109, 0.3) -78.47%,
+            rgba(17, 16, 29, 0.9) 91.61%
+          );
         }
         &:hover::before {
-          background: rgba(0, 0, 0, 0.9);
+          // background: rgba(0, 0, 0, 0.9);
+          background: linear-gradient(
+            -144.39deg,
+            rgba(255, 255, 255, 0.5) -278.56%,
+            rgba(109, 109, 109, 0.5) -78.47%,
+            rgba(17, 16, 29, 0.95) 91.61%
+          );
         }
       }
     }
