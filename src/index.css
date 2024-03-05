@@ -1,7 +1,14 @@
 html {
   scroll-behavior: smooth;
 }
-
+:root {
+  --black-gradient: linear-gradient(
+    -144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
 body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', sans-serif;
@@ -12,7 +19,10 @@ body {
   /* background: #022c43; */
   /* background: #2c3135; */
   /* background: #1c1c22; */
-  background: #161513;
+  /* background: #161513; */
+  background: var(--black-gradient);
+  background-attachment: fixed;
+
   overflow: auto;
   display: block;
 }

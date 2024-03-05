@@ -81,7 +81,7 @@ const Home = () => {
               />
             </span>
           </h1>
-          <h2>Junior Front-End Developer</h2>
+          <h2>Front-End Developer</h2>
 
           <div className="links-mainpage">
             <Link to="/contact" className="flat-button">

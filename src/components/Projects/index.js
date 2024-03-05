@@ -10,6 +10,8 @@ import StartupZ from '../../assets/images/p-startupz.png'
 import PizzaApp from '../../assets/images/p-pizza-app.png'
 import SaaS from '../../assets/images/p-saas.png'
 import Bankapp from '../../assets/images/p-hooba.png'
+import Flexen from '../../assets/images/p-flexen.png'
+import instantQR from '../../assets/images/p-instantQR.png'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -45,7 +47,79 @@ const Projects = () => {
             </a>
           </p>
         </div>
+
         <div className="projects-list">
+          <div
+            className="projects-list_item"
+            style={{ backgroundImage: `url(${instantQR})` }}
+          >
+            <div className="projects-list_item_name">instantQR</div>
+            <div className="projects-list_item_info">
+              Custom QR Code generator
+            </div>
+            <div className="projects-list_item_tech">
+              <span className="projects-list_item_tech_elements">React</span>
+              <span className="projects-list_item_tech_elements">
+                JavaScript
+              </span>
+              <span className="projects-list_item_tech_elements">Tailwind</span>
+              <span className="projects-list_item_tech_elements">HTML</span>
+              <span className="projects-list_item_tech_elements">API</span>
+            </div>
+            <div className="projects-list_item_links">
+              <a
+                href="https://instantqr.net/"
+                className="flat-button "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              <a
+                href="https://github.com/elnurnabivi/QR"
+                className="flat-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div
+            className="projects-list_item"
+            style={{ backgroundImage: `url(${Flexen})` }}
+          >
+            <div className="projects-list_item_name">Flexen</div>
+            <div className="projects-list_item_info">Task manager</div>
+            <div className="projects-list_item_tech">
+              <span className="projects-list_item_tech_elements">React</span>
+              <span className="projects-list_item_tech_elements">
+                TypeScript
+              </span>
+              <span className="projects-list_item_tech_elements">Tailwind</span>
+              <span className="projects-list_item_tech_elements">HTML</span>
+            </div>
+            <div className="projects-list_item_links">
+              <a
+                href="https://elnurnabivi.github.io/flexen-app/"
+                className="flat-button "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              <a
+                href="https://github.com/elnurnabivi/flexen-app"
+                className="flat-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
           <div
             className="projects-list_item"
             style={{ backgroundImage: `url(${ReelPeak})` }}
@@ -122,7 +196,7 @@ const Projects = () => {
             className="projects-list_item"
             style={{ backgroundImage: `url(${Bankapp})` }}
           >
-            <div className="projects-list_item_name">SaaS</div>
+            <div className="projects-list_item_name">HooBank</div>
             <div className="projects-list_item_info">
               A mobile-friendly web app designed to provide a seamless banking
               experience.
