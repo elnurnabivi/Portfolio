@@ -64,9 +64,11 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in unique opportunities - especially on ambitious or
-            large projects. However, if you have any other requests or
-            questions, please don't hesitate to contact me using the form below.
+            If you have a cool project idea or just want to connect, feel free
+            to reach out using the form below.
+            <br />
+            Let’s create something great together!!
+            <br />
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -105,11 +107,10 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Elnur Nabivi,
+          I'm somewhere here:
           <br />
           Warsaw, Poland
           <br />
-          elnurnabivi@gmail.com
         </div>
         <div className="map-wrap">
           <MapContainer
@@ -118,7 +119,11 @@ const Contact = () => {
           >
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[52.207275980857666, 20.92813968417584]}>
-              <Popup>I live here, come over for a cup of coffee </Popup>
+              <Popup>
+                Come over for a cup of coffee,
+                <br />
+                but let me know in advance 🙂{' '}
+              </Popup>
             </Marker>
           </MapContainer>
         </div>

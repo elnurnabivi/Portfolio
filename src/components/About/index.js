@@ -41,26 +41,24 @@ const About = () => {
               className="aboutme-mobile"
             />
           </h1>
+
           <p>
-            Hey there! I'm an enthusiastic Junior Front-End Developer on the
-            hunt for a position in a vibrant IT company. I'm eager to dive into
-            the latest technologies and immerse myself in exciting projects.
+            Hey there! I like to bring digital solutions to life, then scaling
+            them to their full potential.
           </p>
           <p>
-            Confident and always curious, I'm constantly improving my skills,
-            tackling one design challenge at a time.
+            I craft digital products with modern tools like React, Next.js,
+            JavaScript, TypeScript, and CSS3/SCSS, while scaling their impact
+            through SEO, SEA, data-driven campaigns, and conversion
+            optimization.
           </p>
-          <p>
-            My toolbox includes React, JavaScript, TypeScript, HTML, CSS3/SCSS,
-            Bootstrap, Tailwind, jQuery, and Git. Let's create something awesome
-            together!
-          </p>
+          <p>Let’s build something people love and find useful!</p>
         </div>
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <img src={Ts} />
+              <img src={Ts} alt="tech stack" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />

@@ -10,42 +10,89 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['H', 'i', ',', '', 'I', "'m", '', 'E', 'l', 'n', 'u', 'r']
   const jobArray = [
-    'w',
-    'e',
-    'b',
-    '',
-    'd',
-    'e',
-    'v',
-    'e',
+    //Turning ideas into reality
+    //Building digital solutions through
+    'B',
+    'u',
+    'i',
     'l',
-    'o',
-    'p',
-    'e',
-    'r',
-  ]
-  const locationArray = [
-    'b',
-    'a',
-    's',
-    'e',
     'd',
-    '',
     'i',
     'n',
-    '',
-    'P',
+    'g',
+    ' ',
+    '&',
+    ' ',
+    's',
+    'c',
+    'a',
+    'l',
+    'i',
+    'n',
+    'g',
+    ' ',
+    'd',
+    'i',
+    'g',
+    'i',
+    't',
+    'a',
+    'l',
+    ' ',
+    's',
     'o',
     'l',
-    'a',
+    'u',
+    't',
+    'i',
+    'o',
     'n',
-    'd',
+    's',
   ]
+  // const locationArray = [
+  //   'w',
+  //   'i',
+  //   't',
+  //   'h',
+  //   ' ',
+  //   'd',
+  //   'e',
+  //   's',
+  //   'i',
+  //   'g',
+  //   'n',
+  //   ',',
+  //   ' ',
+  //   'd',
+  //   'e',
+  //   'v',
+  //   'e',
+  //   'l',
+  //   'o',
+  //   'p',
+  //   'm',
+  //   'e',
+  //   'n',
+  //   't',
+  //   ' ',
+  //   '&',
+  //   ' ',
+  //   'i',
+  //   'n',
+  //   'n',
+  //   'o',
+  //   'v',
+  //   'a',
+  //   't',
+  //   'i',
+  //   'o',
+  //   'n',
+  // ]
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 4000)
+    }, 4200)
 
     return () => clearTimeout(timeoutId)
   }, [])
@@ -60,7 +107,7 @@ const Home = () => {
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={nameArray}
-                idx={10}
+                idx={10} //10
               />
             </span>
             <br />
@@ -68,20 +115,25 @@ const Home = () => {
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={jobArray}
-                idx={22}
+                idx={2} //12
               />
             </span>
 
             {/* <br /> */}
-            <span className="location-h1">
+            {/* <span className="location-h1">
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={locationArray}
-                idx={24}
+                idx={17} //2
               />
-            </span>
+            </span> */}
           </h1>
-          <h2>Front-End Developer</h2>
+          {/* <h2>Front-End Developer</h2> */}
+          {/* <h2>
+            Bringing ideas to life through <br />
+            design, development, and implementation.
+          </h2> */}
+          <h2>Digital Marketer | Developer </h2>
 
           <div className="links-mainpage">
             <Link to="/contact" className="flat-button">
