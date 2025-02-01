@@ -67,6 +67,11 @@
         }
         .job-h1 {
           margin-bottom: 0;
+          max-width: 298px;
+          span:last-child {
+            display: inline-block;
+            padding-right: 10px;
+          }
         }
         img {
           width: 22px;
