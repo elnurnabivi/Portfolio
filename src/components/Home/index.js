@@ -90,7 +90,7 @@ const Home = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 4200)
+    }, 5000)
 
     return () => clearTimeout(timeoutId)
   }, [])
@@ -113,7 +113,7 @@ const Home = () => {
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={jobArray}
-                idx={2} //12
+                idx={8} //12
               />
             </span>
 
