@@ -52,7 +52,7 @@ const About = () => {
             through SEO, SEA, data-driven campaigns, and conversion
             optimization.
           </p>
-          <p>Let’s build something people love and find useful!</p>
+          <p>Let’s build something people love and use every day.</p>
         </div>
 
         <div className="stage-cube-cont">
