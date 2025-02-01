@@ -10,8 +10,6 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['H', 'i', ',', '', 'I', "'m", '', 'E', 'l', 'n', 'u', 'r']
   const jobArray = [
-    //Turning ideas into reality
-    //Building digital solutions through
     'B',
     'u',
     'i',
