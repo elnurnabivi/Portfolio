@@ -8,6 +8,8 @@ html {
     #6d6d6d -78.47%,
     #11101d 91.61%
   );
+  --bg-color: #0d0d0d;
+  --accent-orange: #ec795a;
 }
 body {
   margin: 0;
@@ -15,13 +17,7 @@ body {
   color: #ec795a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: #022c43; */
-  /* background: #022c43; */
-  /* background: #2c3135; */
-  /* background: #1c1c22; */
-  /* background: #161513; */
-  background: var(--black-gradient);
-  background-attachment: fixed;
+  background: var(--bg-color);
 
   overflow: auto;
   display: block;

@@ -12,6 +12,7 @@ import SaaS from '../../assets/images/p-saas.png'
 import Bankapp from '../../assets/images/p-hooba.png'
 import Flexen from '../../assets/images/p-flexen.png'
 import instantQR from '../../assets/images/p-instantQR.png'
+import Fridish from '../../assets/images/p-fridish.png'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -49,6 +50,38 @@ const Projects = () => {
         </div>
 
         <div className="projects-list">
+        <div
+            className="projects-list_item"
+            style={{ backgroundImage: `url(${Fridish})` }}
+          >
+            <div className="projects-list_item_name">Fridish</div>
+            <div className="projects-list_item_info">
+              Marketplace for musicians and music lovers
+            </div>
+            <div className="projects-list_item_tech">
+              <span className="projects-list_item_tech_elements">React</span>
+              <span className="projects-list_item_tech_elements">
+                JavaScript
+              </span>
+              <span className="projects-list_item_tech_elements">Tailwind</span>
+              <span className="projects-list_item_tech_elements">HTML</span>
+              <span className="projects-list_item_tech_elements">API</span>
+            </div>
+            <div className="projects-list_item_links">
+              <a
+                href="https://fridish.com/"
+                className="flat-button "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              
+            </div>
+          </div>
+
+
+
           <div
             className="projects-list_item"
             style={{ backgroundImage: `url(${instantQR})` }}

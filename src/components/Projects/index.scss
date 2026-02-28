@@ -119,17 +119,16 @@
         left: 0;
         background-color: rgba(0, 0, 0, 0);
         border-radius: 10px;
-        transition: background-color 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out;
         pointer-events: none;
         z-index: 1;
       }
       &:hover::before {
-        // background: rgba(0, 0, 0, 0.8);
         background: linear-gradient(
           -144.39deg,
-          rgba(255, 255, 255, 0.5) -278.56%,
-          rgba(109, 109, 109, 0.5) -78.47%,
-          rgba(17, 16, 29, 0.9) 91.61%
+          rgba(13, 13, 13, 0) -278.56%,
+          rgba(13, 13, 13, 0.55) -78.47%,
+          rgba(13, 13, 13, 0.92) 91.61%
         );
       }
 
