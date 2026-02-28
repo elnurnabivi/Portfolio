@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c7c3e7eb.css",
-    "main.js": "/static/js/main.d925c3c9.js",
+    "main.css": "/static/css/main.994eab21.css",
+    "main.js": "/static/js/main.253b06ce.js",
     "static/media/p-activetrip.png": "/static/media/p-activetrip.0274ebdc7f775f95fd3d.png",
     "static/media/p-bhromaon.png": "/static/media/p-bhromaon.bc0ef56f62e33d2d912a.png",
     "static/media/developer-image3.png": "/static/media/developer-image3.484ce5276614b5a95059.png",
@@ -9,6 +9,7 @@
     "static/media/p-monticello2.png": "/static/media/p-monticello2.1ab5e6f46699d8dc8a5b.png",
     "static/media/p-hooba.png": "/static/media/p-hooba.e6ede67baa1146a6a2c4.png",
     "static/media/p-pizza-app.png": "/static/media/p-pizza-app.a2d508e0ce304728d6f5.png",
+    "static/media/p-fridish.png": "/static/media/p-fridish.18b95e3bec68f6ff0aa4.png",
     "static/media/p-startupz.png": "/static/media/p-startupz.304773945eaf2e44ee2d.png",
     "static/media/p-instantQR.png": "/static/media/p-instantQR.28f0c9ab8ca19e08a042.png",
     "static/media/p-flexen.png": "/static/media/p-flexen.01967263437b04bf59de.png",
@@ -17,11 +18,11 @@
     "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
-    "main.c7c3e7eb.css.map": "/static/css/main.c7c3e7eb.css.map",
-    "main.d925c3c9.js.map": "/static/js/main.d925c3c9.js.map"
+    "main.994eab21.css.map": "/static/css/main.994eab21.css.map",
+    "main.253b06ce.js.map": "/static/js/main.253b06ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7c3e7eb.css",
-    "static/js/main.d925c3c9.js"
+    "static/css/main.994eab21.css",
+    "static/js/main.253b06ce.js"
   ]
 }
