@@ -6,7 +6,6 @@
   animation-delay: 1s;
 }
 
-
 .page {
   position: relative;
   z-index: 1;
@@ -28,11 +27,8 @@
   transition: transform 0.12s ease-out;
 }
 
-// Left oval — height: 90vw (+20%), width: 67.5vw (75% ratio)
+// Left oval — height: 90vw, width: 67.5vw (75% ratio)
 // center at (47vw, 58vh)
-// Rx = 33.75vw, Ry = 45vw
-// left = 47 − 33.75 = 13.25vw
-// top  = 58vh − 45vw
 .parallax-ring--1 {
   width: 67.5vw;
   height: 90vw;
@@ -41,11 +37,8 @@
   opacity: 0.2;
 }
 
-// Right oval — height: 86.5vw (+20%), width: 65vw (75% ratio)
+// Right oval — height: 86.5vw, width: 65vw (75% ratio)
 // center at (53vw, 42vh)
-// Rx = 32.5vw, Ry = 43.25vw
-// left = 53 − 32.5 = 20.5vw
-// top  = 42vh − 43.25vw
 .parallax-ring--2 {
   width: 65vw;
   height: 86.5vw;
@@ -56,86 +49,18 @@
 
 @media screen and (max-width: 768px) {
   .parallax-ring--1 {
-    width: 77.5vw;
-    height: 103.5vw;
-    left: 8.25vw;
-    top: calc(62vh - 51.75vw);
+    width: 190vw;
+    height: 210vw;
+    left: -65vw;
+    top: calc(70vh - 105vw);
+    opacity: 0.2;
   }
+
   .parallax-ring--2 {
-    width: 74.75vw;
-    height: 99.5vw;
-    left: 15.625vw;
-    top: calc(38vh - 49.75vw);
+    width: 184vw;
+    height: 200vw;
+    left: -22vw;
+    top: calc(30vh - 100vw);
+    opacity: 0.16;
   }
 }
-
-// .page {
-//   position: relative;
-//   z-index: 1;
-// }
-
-// // Parallax decorative rings — crossing circles (70% visible)
-// //
-// // Two medium circles that CROSS each other in the middle.
-// // Left circle: center bottom-left → arc sweeps up-right
-// // Right circle: center top-right → arc sweeps down-left
-// // They intersect near the center, forming an X.
-// .parallax-rings {
-//   position: fixed;
-//   inset: 0;
-//   pointer-events: none;
-//   z-index: 0;
-//   overflow: hidden;
-// }
-
-// .parallax-ring {
-//   position: absolute;
-//   border-radius: 50%;
-//   border: 1px solid var(--accent-orange, #ec795a);
-//   will-change: transform;
-//   transition: transform 0.12s ease-out;
-// }
-
-// // Left ring — 25% BIGGER: R = 32.5vw (26 × 1.25), center CLOSER to viewport center
-// // To make convergence area bigger, move center closer to (50vw, 50vh)
-// // NEW: center at (40vw, 65vh), R = 32.5vw
-// // Distance to (50vw, 50vh): √[(50−40)² + (50vh−65vh)²] = √[10² + (−15vh)²] ≈ 18vw
-// // R=32.5vw > 18vw → circle passes THROUGH center with lots of overlap ✓
-// // left = 40 − 32.5 = 7.5vw
-// // top  = 65vh − 32.5vw
-// .parallax-ring--1 {
-//   width: 65vw;
-//   height: 65vw;
-//   left: 7.5vw;
-//   top: calc(65vh - 32.5vw);
-//   opacity: 0.2;
-// }
-
-// // Right ring — 25% BIGGER: R = 31.25vw (25 × 1.25), center CLOSER to viewport center
-// // NEW: center at (60vw, 35vh), R = 31.25vw
-// // Distance to (50vw, 50vh): √[(60−50)² + (35vh−50vh)²] = √[10² + (−15vh)²] ≈ 18vw
-// // R=31.25vw > 18vw → circle passes THROUGH center with lots of overlap ✓
-// // left = 60 − 31.25 = 28.75vw
-// // top  = 35vh − 31.25vw
-// .parallax-ring--2 {
-//   width: 62.5vw;
-//   height: 62.5vw;
-//   left: 28.75vw;
-//   top: calc(35vh - 31.25vw);
-//   opacity: 0.16;
-// }
-
-// @media screen and (max-width: 768px) {
-//   .parallax-ring--1 {
-//     width: 75vw;
-//     height: 75vw;
-//     left: 5vw;
-//     top: calc(70vh - 37.5vw);
-//   }
-//   .parallax-ring--2 {
-//     width: 71.875vw;
-//     height: 71.875vw;
-//     left: 26vw;
-//     top: calc(40vh - 35.9375vw);
-//   }
-// }
